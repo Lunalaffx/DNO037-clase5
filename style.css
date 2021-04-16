@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+html{
+        background: #544a7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #544a7d, #ffd452); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #544a7d, #ffd452); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        min-height: 100%;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+}
+
+a{color:black;}
+
+div.container {
+    width: 80%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header, main, footer{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+}
+
+header div {
+        width: 96%;
+        margin: 1%;
+        padding:1%; 
+}
+
+header div:nth-child(2) {
+        display:none;
+}
+
+@media (orientation:landscape){
+    header div{
+        width: 46%;
+        margin: 1%;
+        padding:1%;    
+    }
+    header div:nth-child(2) {
+        display:block;
+    }
+}
+
+header h1{
+    font-size:calc(3.5rem - 2vw);
+    line-height: 1;
+}
+
+header h2{
+    font-size:calc(1rem + 1vw);
+    line-height: 1;
+}
+
+header h3{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+main{
+    min-height: 50vh;
+    padding-bottom:5vh;
+}
+
+main article {
+    border-radius: 30px 30px;
+    width: 44%;
+    margin: 1%;
+    padding:2%;
+    background:rgba(245,255,255,0.1);
+    box-shadow: 5px 5px 2px rgba(55,21,66,0.5);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);    
+}
+
+@media (orientation:landscape){
+    main article {
+        width: 21%;
+        margin: 1%;
+        padding:1%;
+    }
+}
+
+main canvas{
+    background:rgba(245,255,255,0.1);
+    box-shadow: 5px 5px 2px rgba(55,21,66,0.5);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 30px 30px;
+}
+
+footer p{
+    width: 96%;
+    margin:2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
